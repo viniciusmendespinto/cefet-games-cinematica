@@ -25,17 +25,15 @@ public class Perseguir extends Algoritmo {
     public Direcionamento guiar(Pose agente) {
         Direcionamento output = new Direcionamento();
 
-        // Calcula a direção
-        output.velocidade = new Vector3(alvo.posicao);
-        output.velocidade.sub(agente.posicao);
-
-        
-        if (output.velocidade.len2() > 0) {
-            // normaliza a velocidade (fica |v| = 1)
-            output.velocidade.nor();
-            // multiplica velovidade pela velocidade tangencial
-            output.velocidade.scl(maxVelocidade);
-        }
+        // Calcula a direção para onde o agente deve ir
+        // Input: a posicao do objetivo (this.alvo) e deste agente
+        // ..
+        // ..
+        // ..
+        // ..
+        // Output: vetor velocidade (apontando na direção encontrada) 
+        //         limitado pela maxVelocidade (tangencial)
+        // PS: não é necessário definir a rotação
 
         return output;
     }
