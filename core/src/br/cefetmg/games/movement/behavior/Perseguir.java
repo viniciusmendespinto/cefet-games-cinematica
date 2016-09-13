@@ -26,7 +26,7 @@ public class Perseguir extends Algoritmo {
         Direcionamento output = new Direcionamento();
 
         // Calcula a direção
-        output.velocidade = new Vector3(alvo.posicao);
+        output.velocidade = new Vector3(alvo.getObjetivo());
         output.velocidade.sub(agente.posicao);
 
         

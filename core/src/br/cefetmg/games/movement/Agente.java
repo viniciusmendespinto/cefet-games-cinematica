@@ -31,7 +31,7 @@ public class Agente {
 
             // força o agente a olhar na direção em que está andandando
             if (!comportamento.protegeOrientacao) {
-                pose.olharParaVelocidade(direcionamento.velocidade);
+                pose.olharNaDirecaoDaVelocidade(direcionamento.velocidade);
             }
         }
     }

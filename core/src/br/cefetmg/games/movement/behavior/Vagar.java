@@ -30,7 +30,7 @@ public class Vagar extends Algoritmo {
     public Direcionamento guiar(Pose agente) {
         Direcionamento output = new Direcionamento();
 
-        output.velocidade = agente.orientacaoVetor().scl(maxVelocidade);
+        output.velocidade = agente.getOrientacaoComoVetor().scl(maxVelocidade);
         output.rotacao = randomBinomial() * maxAngular;
 
         return output;

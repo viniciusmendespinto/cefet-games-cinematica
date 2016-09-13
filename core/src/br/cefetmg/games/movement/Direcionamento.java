@@ -3,7 +3,7 @@ package br.cefetmg.games.movement;
 import com.badlogic.gdx.math.Vector3;
 
 /**
- * SteeringOutput é um direcionamento que será feito por um agente.
+ * Direcionamento é um guia de movimentação que será feito por um agente.
  *
  * Ele consiste de uma componente linear e outra angular (velocidade e 
  * rotação)
